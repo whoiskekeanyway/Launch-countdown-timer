@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/whoiskekeanyway/theme-switching-calculator)
-- Live Site URL: [Add live site URL here](theme-switching-calculator.netlify.app)
+- Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer]()
+- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/]()
 
 ## My process
 
