@@ -1,6 +1,6 @@
 # Frontend Mentor - Launch countdown timer solution
 
-This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -10,6 +10,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -29,7 +30,10 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer](https://github.com/whoiskekeanyway/Launch-countdown-timer)
-- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/](https://keen-torvalds-a7a200.netlify.app/)
+
+- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/](https://keen-torvalds-a7a200.netlify.app)
+
+
 
 ## My process
 
@@ -42,9 +46,29 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript
 
+### What I learned
+
+```js
+function updateTextSize() {
+  const fonts = document.querySelector(".clock-day-value");
+  const stringiFiedDays = calcDays.toString().length;
+
+  if (stringiFiedDays === 3) {
+    fonts.style.fontSize = "5rem";
+  } else if (stringiFiedDays < 3) {
+    fonts.style.fontSize = "8rem";
+  }
+}
+
+when the value is updated to 3 letter then the font size will adjust to 5rem
+when the value is updated to 2 letter then the font size will adjust to 8rem
+```
+
 ## Author
+
 
 - Website - [scriptsandtags.com](https://www.scriptsandtags.com/)
 - Frontend Mentor - [@whoiskekeanyway](https://www.frontendmentor.io/profile/whoiskekeanyway)
 - Twitter - [@scriptsandtags](https://www.twitter.com/scriptsandtags)
+
 

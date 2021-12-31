@@ -23,7 +23,7 @@ main {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
   margin-top: 50px;
   background-image: url("images/pattern-hills.svg"), url("images/bg-stars.svg");
   background-repeat: no-repeat;
@@ -62,22 +62,52 @@ main {
   padding: 0;
 }
 
-.clock-box {
+.top,
+.bottom {
   position: relative;
   width: 200px;
-  height: 200px;
   background-color: hsl(236, 21%, 26%);
   margin: 10px;
   color: hsl(345, 95%, 68%);
   margin: 0;
-  padding: 0;
-  font-size: 11rem;
+  padding: 20px;
+  font-size: 8vw;
   text-align: center;
   font-family: "Red Hat Text", sans-serif;
   font-weight: 700;
   box-shadow: 1px 10px hsl(235, 16%, 14%);
   border-radius: 5%;
   border: 1px solid hsl(235, 16%, 14%);
+}
+
+.clock-day {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: hsl(236, 21%, 26%);
+  margin: 0;
+  padding: 20px;
+  box-shadow: 1px 10px hsl(235, 16%, 14%);
+  border-radius: 5%;
+  border: 1px solid hsl(235, 16%, 14%);
+}
+
+.clock-day-value,
+.clock-hour-value,
+.clock-minute-value,
+.clock-second-value {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 6vw;
+  color: #fb6087;
 }
 
 .clock-box-display {
@@ -106,6 +136,11 @@ main {
 }
 
 .attribution {
-    margin-top: 2rem;
-    text-align: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media all and (max-width: 767px) {
+  main {
+  }
 }
