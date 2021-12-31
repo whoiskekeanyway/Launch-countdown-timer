@@ -1,6 +1,6 @@
 # Frontend Mentor - Launch countdown timer solution
 
-This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -10,6 +10,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -20,7 +21,7 @@ Users should be able to:
 
 - See hover states for all interactive elements on the page
 - See a live countdown timer that ticks down every second (start the count at 14 days)
-- **Bonus**: When a number changes, make the card flip from the middle
+
 
 ### Screenshot
 
@@ -28,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer]()
-- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/]()
+- Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer](https://github.com/whoiskekeanyway/Launch-countdown-timer)
+- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/](https://keen-torvalds-a7a200.netlify.app)
 
 ## My process
 
@@ -41,8 +42,26 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
+### What I learned
+
+```js
+function updateTextSize() {
+  const fonts = document.querySelector(".clock-day-value");
+  const stringiFiedDays = calcDays.toString().length;
+
+  if (stringiFiedDays === 3) {
+    fonts.style.fontSize = "5rem";
+  } else if (stringiFiedDays < 3) {
+    fonts.style.fontSize = "8rem";
+  }
+}
+
+when the value is updated to 3 letter then the font size will adjust to 5rem
+when the value is updated to 2 letter then the font size will adjust to 8rem
+```
+
 ## Author
 
-- Website - [Add your name here](https://scriptsandtags.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/whoiskekeanyway)
-- Twitter - [@yourusername](https://www.twitter.com/whoiskekeanyway)
+- Website - [https://scriptsandtags.com]()
+- Frontend Mentor - [https://www.frontendmentor.io/profile/whoiskekeanyway]()
+- Twitter - [https://www.twitter.com/whoiskekeanyway]()
