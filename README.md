@@ -20,7 +20,7 @@ Users should be able to:
 
 - See hover states for all interactive elements on the page
 - See a live countdown timer that ticks down every second (start the count at 14 days)
-- **Bonus**: When a number changes, make the card flip from the middle
+
 
 ### Screenshot
 
@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer]()
-- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/]()
+- Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer](https://github.com/whoiskekeanyway/Launch-countdown-timer)
+- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/](https://keen-torvalds-a7a200.netlify.app/)
 
 ## My process
 
@@ -40,9 +40,11 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Javascript
 
 ## Author
 
-- Website - [Add your name here](https://scriptsandtags.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/whoiskekeanyway)
-- Twitter - [@yourusername](https://www.twitter.com/whoiskekeanyway)
+- Website - [scriptsandtags.com](https://www.scriptsandtags.com/)
+- Frontend Mentor - [@whoiskekeanyway](https://www.frontendmentor.io/profile/whoiskekeanyway)
+- Twitter - [@scriptsandtags](https://www.twitter.com/scriptsandtags)
+
