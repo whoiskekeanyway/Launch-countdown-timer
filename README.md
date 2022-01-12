@@ -30,7 +30,10 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer](https://github.com/whoiskekeanyway/Launch-countdown-timer)
+
 - Live Site URL: [https://launchcountdown-timer.netlify.app/](https://launchcountdown-timer.netlify.app/)
+
+
 
 ## My process
 
@@ -41,8 +44,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Responsive design
-- JavaScript
+- Javascript
 
 
 ### What I learned
@@ -88,6 +90,9 @@ when the value is updated to 2 letter then the font size will adjust to 8rem
 
 ## Author
 
-- Website - [https://scriptsandtags.com]()
-- Frontend Mentor - [https://www.frontendmentor.io/profile/whoiskekeanyway]()
-- Twitter - [https://www.twitter.com/whoiskekeanyway]()
+
+- Website - [scriptsandtags.com](https://www.scriptsandtags.com/)
+- Frontend Mentor - [@whoiskekeanyway](https://www.frontendmentor.io/profile/whoiskekeanyway)
+- Twitter - [@scriptsandtags](https://www.twitter.com/scriptsandtags)
+
+
