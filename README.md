@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/whoiskekeanyway/Launch-countdown-timer](https://github.com/whoiskekeanyway/Launch-countdown-timer)
-- Live Site URL: [https://keen-torvalds-a7a200.netlify.app/](https://keen-torvalds-a7a200.netlify.app)
+- Live Site URL: [https://launchcountdown-timer.netlify.app/](https://launchcountdown-timer.netlify.app/)
 
 ## My process
 
@@ -41,8 +41,34 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Responsive design
+- JavaScript
+
 
 ### What I learned
+
+### Javacript
+- The toString() method in Javascript is used with a number and converts the number to a string
+- JavaScript Date objects represent a single moment in time in a platform-independent format.
+- The Date object has a getTime() method that returns the number of milliseconds since 1 January 1970 UTC.
+- The Date object has a getDate() method that returns the day of the month (from 1 to 31)
+- The Date object has a getDay() method that returns the day of the week (from 0 to 6)
+- The Date object has a getFullYear() method that returns the year (from 0 to 99)
+- The Date object has a getHours() method that returns the hour (from 0 to 23)
+- The Date object has a getMinutes() method that returns the minutes (from 0 to 59)
+- The Date object has a getSeconds() method that returns the seconds (from 0 to 59)
+- The Date object has a getMilliseconds() method that returns the milliseconds (from 0 to 999) and many other methods
+- Using the Date object, we can create a new Date object with the current date and time
+The setInterval() method calls a function at specified intervals (in milliseconds).
+
+
+### CSS
+
+- How to use two photos to create a background image
+- How to position background images
+- Positioning (top, right, bottom, left, etc)
+- Display (block, inline, inline-block, none, etc)
+
 
 ```js
 function updateTextSize() {
