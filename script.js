@@ -1,45 +1,52 @@
-// console.clear();
+console.clear();
 
-countDownDate = new Date("Jan 01, 2022 00:00:00").getTime();
-
-var x = setInterval(function () {
+// update time to the dom every second
+setInterval(function () {
+  // Initialize the countdown date and present date
+  const countDownDate = new Date("Apr 21, 2022 00:00:00").getTime();
   const now = new Date().getTime();
+  // distance is determined by the difference between the two countdown and present time
   const distance = countDownDate - now;
-  
 
   // Time calculations for days, hours, minutes and seconds
-  calcDays = Math.floor(distance / (1000 * 60 * 60 * 24));
-  calcHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  calcMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  calcSeconds = Math.floor((distance % (1000 * 60)) / 1000);
+  const calcDays = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const calcHours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const calcMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const calcSeconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  // Display the result in the element
+  // Output the result in an element with individual id's"
   function upDate() {
     document.querySelector(".clock-day-value").innerHTML = calcDays;
     document.querySelector(".clock-hour-value").innerHTML = calcHours;
     document.querySelector(".clock-minute-value").innerHTML = calcMinutes;
     document.querySelector(".clock-second-value").innerHTML = calcSeconds;
-    updateTextSize();
+    // updateTextSize();
   }
 
-  function updateTextSize() {
-    const fonts = document.querySelector(".clock-day-value");
-    const stringiFiedDays = calcDays.toString().length;
-
-    if (stringiFiedDays === 3) {
-      fonts.style.fontSize = "5rem";
-    } else if (stringiFiedDays < 3) {
-      fonts.style.fontSize = "8rem";
-    }
-  }
+  // Update the text size of the numbers when the font size is changed to 3 length
+  //  function updateTextSize() {
+  //    const fonts = document.querySelector(".clock-day-value");
+  //    const stringiFiedDays = calcDays.toString().length;
+  //
+  //    if (stringiFiedDays === 3) {
+  //      fonts.style.fontSize = "8rem";
+  //    } else if (stringiFiedDays < 3) {
+  //      fonts.style.fontSize = "8rem";
+  //    }
+  //  }
 
   upDate();
 
+  // If the count down is finished, Write Happy Birthday to the screen and stop the timer
 
-  // Output the result in an element with individual id's"
-
-  // If the count down is finished, write some text
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("greetings").innerHTML = "Happy Birthday! Babe";
+    clearInterval();
+    document.getElementById("greetings").innerHTML = "Happy Birthday! Keke";
+    alert("Happy Birthday! Keke");
   }
+
+  // 1000 milliseconds = 1 second and leaving it empty will make it run every second
 }, 1000);

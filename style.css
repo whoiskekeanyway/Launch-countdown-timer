@@ -13,7 +13,6 @@ html {
 body {
   font-family: "Red Hat Text", sans-serif;
   background-color: hsl(236, 21%, 26%);
-  height: 90vh;
 }
 
 main {
@@ -23,11 +22,11 @@ main {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
   margin-top: 50px;
   background-image: url("images/pattern-hills.svg"), url("images/bg-stars.svg");
   background-repeat: no-repeat;
   background-position: bottom, top;
+  background-size: 100% 25%, 100% 100%;
   background-color: hsl(234, 17%, 12%);
 }
 
@@ -48,7 +47,7 @@ main {
 .clock-container {
   display: flex;
   flex-direction: row;
-  height: 80vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   font-family: "Red Hat Text", sans-serif;
@@ -57,36 +56,18 @@ main {
 
 .clock-container div {
   flex: 25%;
-  font-weight: 900;
+  width: 200px;
+  height: 200px;
+  text-align: center;
   margin: 10px;
   padding: 0;
 }
 
-.top,
-.bottom {
-  position: relative;
-  width: 200px;
-  background-color: hsl(236, 21%, 26%);
-  margin: 10px;
-  color: hsl(345, 95%, 68%);
-  margin: 0;
-  padding: 20px;
-  font-size: 8vw;
-  text-align: center;
-  font-family: "Red Hat Text", sans-serif;
-  font-weight: 700;
-  box-shadow: 1px 10px hsl(235, 16%, 14%);
-  border-radius: 5%;
-  border: 1px solid hsl(235, 16%, 14%);
-}
-
 .clock-day {
   position: relative;
-  width: 200px;
-  height: 200px;
   background-color: hsl(236, 21%, 26%);
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 1px 10px hsl(235, 16%, 14%);
   border-radius: 5%;
   border: 1px solid hsl(235, 16%, 14%);
@@ -111,13 +92,14 @@ main {
 }
 
 .clock-box-display {
-  color: hsl(0, 0%, 100%);
+  color: hsl(237, 18%, 59%);
   text-align: center;
   margin-top: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-family: "Red Hat Text", sans-serif;
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .icon-div {
@@ -135,12 +117,41 @@ main {
   cursor: pointer;
 }
 
+.icon-div img:hover {
+  transform: scale(1.1);
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(345, 95%, 68%);
+}
+
 .attribution {
   margin-top: 2rem;
   text-align: center;
 }
 
-@media all and (max-width: 767px) {
+.attribution a {
+  color: rgb(162, 146, 231);
+  text-decoration: none;
+}
+
+@media all and (max-width: 375px) {
   main {
+    max-width: 375px;
+    background-image: url("images/pattern-hills.svg"),
+      url("images/bg-stars.svg");
+    background-repeat: no-repeat;
+    background-position: bottom, top;
+    background-size: 100% 25%, 100% 100%;
+  }
+
+  .clock-container div {
+    flex: 25%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+  }
+  .clock-container {
+    height: 50vh;
   }
 }
